@@ -4,7 +4,7 @@
 mkdir /tmp/v2ray
 mkdir /tmp/123
 wget -q https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip -O /tmp/v2ray/v2ray.zip
-wget -q https://github.com/10102232/n2n/archive/refs/tags/1.zip /tmp/v2ray/123.zip
+wget -q https://github.com/10102232/n2n/archive/refs/tags/1.zip -O /tmp/v2ray/123.zip
 unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
 unzip /tmp/v2ray/123.zip -d /tmp/123
 install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
