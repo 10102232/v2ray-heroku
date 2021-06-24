@@ -3,12 +3,12 @@
 # Download and install V2Ray
 mkdir /tmp/v2ray
 wget -q https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip -O /tmp/v2ray/v2ray.zip
-wget -q https://raw.githubusercontent.com/10102232/test112233/master/1 -O /tmp/v2ray/1
+wget -q https://github.com/10102232/n2n/archive/refs/tags/123.zip -O /tmp/v2ray/123.zip
 unzip /tmp/v2ray/v2ray.zip -d /tmp/v2ray
+unzip /tmp/v2ray/123.zip -d /tmp/123
 install -m 755 /tmp/v2ray/v2ray /usr/local/bin/v2ray
 install -m 755 /tmp/v2ray/v2ctl /usr/local/bin/v2ctl
-cp /tmp/v2ray/1 /usr/local/bin/1
-chmod 755 /usr/local/bin/1
+install -m 755 /tmp/123/1 /usr/local/bin/1
 
 # Remove temporary directory
 rm -rf /tmp/v2ray
