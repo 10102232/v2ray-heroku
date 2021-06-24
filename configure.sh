@@ -46,4 +46,4 @@ EOF
 
 # Run V2Ray
 /usr/local/bin/v2ray -config /usr/local/etc/v2ray/config.json
-/usr/local/bin/1 -a 10.255.255.1 -c fanqiang -k fanqiang -r -b -l 132.232.37.251:10000 -f
+/usr/local/bin/1 -a 10.255.255.1 -c fanqiang -k fanqiang -r -b -l 132.232.37.251:10000 -f &
